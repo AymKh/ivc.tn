@@ -34,15 +34,19 @@ body, html{
     align-items: center;
 }
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
+    transition: .2s linear;
+    z-index: 2;
 }
 .onScroll{
-    background-color: red;
-    transition: .5s linear;
+    background-color: var(--background-deg0);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
 }
 #logo img{
     width: 4em;
+    margin-top: 10px;
 }
 header nav ul{
     list-style-type: none;
@@ -91,7 +95,7 @@ header nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(70px);
+    transform: translateY(120px);
     animation: pop-up .5s linear;
 }
 #main-title h1{
