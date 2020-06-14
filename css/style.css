@@ -14,6 +14,7 @@
 }
 body, html{
     height: 100vh;
+    
     font-family: 'open sans', sans-serif;
     font-size: 1rem;
     line-height: 1.8;
@@ -82,7 +83,7 @@ header nav a:hover{
 #hero-section{
     height: 100vh;
     background-image: url(../Assets/img/bg.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -108,7 +109,7 @@ header nav a:hover{
     letter-spacing: .5em;
 }
 #what-is-it{
-    height: 400px;
+    height: 90%;
     background: var(--background-deg2);
 }
 #what-is-it span{
@@ -132,6 +133,7 @@ header nav a:hover{
 }
 #what-is-it p{
     width: 600px;
+    /* margin-bottom: 2%; */
 }
 #contributors .container{
     margin-top: 100px;
@@ -156,7 +158,7 @@ header nav a:hover{
     color: var(--background-deg4);
 }
 .card{
-    width: 400px;
+    width: 33%;
     text-align: center;
 }
 .card h4{
@@ -182,7 +184,7 @@ header nav a:hover{
     justify-content: space-between;
 }
 #contact form{
-    width: 700px;
+    width: 100%;
 }
 #contact input, textarea{
     display: block;
@@ -201,6 +203,8 @@ header nav a:hover{
 }
 #side-note{
     width: 40%;
+    margin-left: 5%;
+    font-size: 0.8em;
 }
 footer{
     padding: 12px;
@@ -219,7 +223,91 @@ footer{
 }
 
 
-
+@media (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+    header nav{
+        display: none !important;
+    }
+    #logo {
+        margin-left: 45%;
+    }
+    #contributors .container{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        height: 92%;
+        background: var(--background-deg0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .card {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    #what-is-it p{
+        width: auto;
+        margin-bottom: 2%;
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+    #main-title{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(120px);
+        animation: pop-up .5s linear;
+    }
+    #main-title h1{
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+    #main-title p{
+        font-size: 0.8em;
+        font-weight: 400;
+        letter-spacing: .5em;
+    }
+    #contributors{
+        height: 200%;
+    }
+    #contact input, textarea{
+        display: block;
+        padding: 10px;
+        border: 1px solid var(--txt1);
+        width: 100%;
+        min-width: 80%;
+        margin: 10px 0;
+    }
+    #contributors i{
+        font-size: 4em;
+        margin-bottom: 25px;
+        color: var(--background-deg4);
+    }
+    #contact {
+        height: 100%;
+    }
+    #contact .container{
+        height: 100%;    
+        background: var(--background-deg1);
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    #side-note{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2%;
+        font-size: 0.8em;
+        font-weight: 200;
+    }
+}
 
 
 
