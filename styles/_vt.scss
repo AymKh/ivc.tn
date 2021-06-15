@@ -1,0 +1,35 @@
+#virtualTour{
+    width: 100%;
+    margin-top: 5rem;
+    .flexDisplay{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+#vtGallery{
+    width: fit-content;
+    iframe:nth-child(2){
+        position: relative;
+        margin-top: -100px;
+        margin-left: 200px;
+    }
+    iframe:nth-child(3){
+        position: relative;
+        margin-top: -100px;
+        margin-left: 400px;
+    }
+}
+#vtDescription{
+    font-size: 1.5rem;
+    font-weight: 200;
+    height: 250px;
+    .mainButton{
+        margin-top: 2rem;
+        a, span{
+            font-size: 1.5rem;
+        }
+    }
+    .externalLink{
+        font-size: 1rem;
+    }
+}

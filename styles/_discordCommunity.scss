@@ -1,0 +1,19 @@
+#discordCommunity{
+    width: 100%;
+    margin-top: 5rem;
+    background-color: $light-color;
+    padding: 1rem 0;
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        font-weight: 400;
+        color: $dark-1;
+    }
+    a{
+        font-size: 2rem;
+        color: $dark-2;
+        &:hover{
+            color: $red;
+        }
+    }
+}
