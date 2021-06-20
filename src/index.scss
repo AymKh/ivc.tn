@@ -1,0 +1,243 @@
+$blue: #77CCFA;
+$red: #F65164;
+$light-color: #fff;
+$purple: #B55BF9;
+$purple-dark: #795EFC;
+$dark-1: #25294A;
+$dark-2: #202442;
+$dark-3: #000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+    height: 90vh;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 90%;
+    max-width: 1150px;
+    height: 100%;
+    margin: auto;
+}
+
+// REUSABLE COMPONENTS
+.mainButton{
+    text-decoration: none;
+    display: inline-block;
+    padding: .2rem 1rem;
+    text-transform: uppercase;
+    border-radius: .2rem;
+    border: 2px solid $blue;
+    color: $blue;
+    &:hover{
+        background-color: $blue;
+        color: $dark-3;
+    }
+}
+.externalLink{
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: $red;
+        span{
+            font-size: 1rem;
+            padding-left: .5rem;
+        }
+        &:hover{
+            background-color: $red;
+            color: #fff;
+        }
+    }
+}
+
+
+// ======NAVBAR======
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    .container {
+        border-bottom: 1px solid #DDDDDD;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand{
+        a{
+            text-decoration: none;
+            color: $dark-3;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                margin-right: 1rem;
+                width: 3rem;
+            }
+            h3{
+                font-size: .8rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            list-style-type: none;
+            li{
+                float: left;
+                a{
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: .8rem;
+                    display: inline-block;
+                    padding: 1rem;
+                    color: $dark-1;
+                    &:hover{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ======Hero Section======
+.hero-section{
+    width: 100%;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#description{
+    width: 700px;
+    max-width: 700px;
+    text-align: justify;
+    padding-top: 5rem;
+    h1{
+        font-size: 2.8rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing:.4rem;
+    }
+    p{
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+    .mainButton{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+}
+#heroArt{
+    text-align: right;
+    width: 100%;
+    img{
+        width: 80%;
+    }
+}
+
+
+// ======Social Links======
+#socialLinks{
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h3{
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        border-top: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+        margin-top: 3rem;
+        padding: 1rem 0;
+        #links{
+            a{
+                text-decoration: none;
+                &:hover i{
+                    color: $blue;
+                }
+            }
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            i{
+                font-size: 2rem;
+                color: $dark-3;
+            }
+            #tooltip{
+                position: absolute;
+                background-color: $blue;
+                padding: .1rem .3rem;
+                color: $dark-3;
+                border-radius: .4rem;
+                display: none;
+            }
+            a:hover #tooltip{
+                display: block;
+            }
+        }
+    }
+}
+
+// ======Virtual-Tour======
+#vt{
+    background-color: #fafafa;
+    padding-top: 3rem;
+    p{
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+    }
+    .mainButton{
+        font-size: 1.5rem;
+    }
+    #gallery-grid{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(566px, 1fr));
+        grid-gap: 1rem;
+    }
+}
+
+// ======DISCORD======
+
+#discord-banner{
+    margin-top: 3rem;
+    text-align: center;
+    label{
+        font-size: 3rem;
+        span{
+            font-size: 2rem;
+        }
+    }
+}
+
+// ======FOOTER======
+#footer{
+    margin-top: 3rem;
+    text-align: center;
+    background-color: $dark-3;
+    color: $light-color;
+    padding: .5rem 0;
+}
