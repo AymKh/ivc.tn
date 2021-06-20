@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: Roboto,Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  height: 90vh;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  height: 100%;
+  margin: auto;
+}
+
+.mainButton {
+  text-decoration: none;
+  display: inline-block;
+  padding: .2rem 1rem;
+  text-transform: uppercase;
+  border-radius: .2rem;
+  border: 2px solid #77CCFA;
+  color: #77CCFA;
+}
+
+.mainButton:hover {
+  background-color: #77CCFA;
+  color: #000;
+}
+
+.externalLink {
+  cursor: pointer;
+}
+
+.externalLink a {
+  text-decoration: none;
+  color: #F65164;
+}
+
+.externalLink a span {
+  font-size: 1rem;
+  padding-left: .5rem;
+}
+
+.externalLink a:hover {
+  background-color: #F65164;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+header .container {
+  border-bottom: 1px solid #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .brand a {
+  text-decoration: none;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .brand a img {
+  margin-right: 1rem;
+  width: 3rem;
+}
+
+header .brand a h3 {
+  font-size: .8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8rem;
+  display: inline-block;
+  padding: 1rem;
+  color: #25294A;
+}
+
+header nav ul li a:hover {
+  color: #77CCFA;
+}
+
+.hero-section {
+  width: 100%;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#description {
+  width: 700px;
+  max-width: 700px;
+  text-align: justify;
+  padding-top: 5rem;
+}
+
+#description h1 {
+  font-size: 2.8rem;
+}
+
+#description h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .4rem;
+}
+
+#description p {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+#description .mainButton {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+#heroArt {
+  text-align: right;
+  width: 100%;
+}
+
+#heroArt img {
+  width: 80%;
+}
+
+#socialLinks .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+#socialLinks .container h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#socialLinks .container #links {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#socialLinks .container #links a {
+  text-decoration: none;
+}
+
+#socialLinks .container #links a:hover i {
+  color: #77CCFA;
+}
+
+#socialLinks .container #links i {
+  font-size: 2rem;
+  color: #000;
+}
+
+#socialLinks .container #links #tooltip {
+  position: absolute;
+  background-color: #77CCFA;
+  padding: .1rem .3rem;
+  color: #000;
+  border-radius: .4rem;
+  display: none;
+}
+
+#socialLinks .container #links a:hover #tooltip {
+  display: block;
+}
+
+#vt {
+  background-color: #fafafa;
+  padding-top: 3rem;
+}
+
+#vt p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+#vt .mainButton {
+  font-size: 1.5rem;
+}
+
+#vt #gallery-grid {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(566px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(566px, 1fr));
+  grid-gap: 1rem;
+}
+
+#discord-banner {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#discord-banner label {
+  font-size: 3rem;
+}
+
+#discord-banner label span {
+  font-size: 2rem;
+}
+
+#footer {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: .5rem 0;
+}
+/*# sourceMappingURL=index.css.map */
